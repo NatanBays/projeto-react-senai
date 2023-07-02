@@ -26,7 +26,7 @@ function Product() {
             <div>
                 <h1>Lançamentos</h1>
             </div>
-            <div >
+            <div className="container">
                 {data && data.map((x) =>
                     <article className="film-container">
                         <span>{x.title}</span>

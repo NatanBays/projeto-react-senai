@@ -29,6 +29,7 @@ function EmailForm () {
         console.log(content)
         e.target.reset()
         console.log(content)
+        alert("Mensagem enviada!")
 
     }
     useEffect(() => {
