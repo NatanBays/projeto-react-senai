@@ -1,11 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router,Route, Link, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Product from './pages/Product';
-import Info from './pages/Info';
-import Goal from './pages/Goal';
-import Contact from './pages/Contact';
+import Home from './pages/home/Home';
+import Product from './pages/product/Product';
+import Info from './pages/info/Info';
+import Goal from './pages/goal/Goal';
+import Contact from './pages/contact/Contact';
 import React from 'react';
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
         <Route path="/goal" Component={Goal}/>
         <Route path="/contact" Component={Contact}/>
       </Routes>
-
+      <Footer/>
     </Router>
   );
 }
