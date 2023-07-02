@@ -1,26 +1,44 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-
-function Product(){
+import './product.css'
+function Product() {
 
     const [data, setData] = useState()
 
-useEffect(() => {
-    axios.get(`http://api.weatherbit.io/v2.0/current?lat=-27.593500&lon=-48.558540&key=2558a3d1955842d6b0e5a3a50549b557`)
-        .then(response => [
-            setData(response)
+    useEffect(() => {
+        axios.get("https://api.themoviedb.org/3/movie/now_playing", {
+            params: {
+                api_key: "b872d30e7ada92638f11d4091d584a72",
+                lenguage: "pt-BR",
+                page: 1,
+            },
+        }).then(response => [
+            setData(response.data.results.slice(0, 10))
         ])
-        .catch(error => {
-            console.log(error)
-        })
-}, [])
+            .catch(error => {
+                console.log(error)
+            })
+    }, [])
 
-    console.log("data",data)
-    return(
+    console.log("data", data)
+    return (
         <div>
-            <h1>Produto</h1>
+            <div>
+                <h1>Lançamentos</h1>
+            </div>
+            <div >
+                {data && data.map((x) =>
+                    <article className="film-container">
+                        <span>{x.title}</span>
+                        <img className="film-poster"
+                            src={`https://image.tmdb.org/t/p/original/${x.poster_path}`}
+                        />
+                    </article>
+                )}
+            </div>
         </div>
     )
 
 }
+
 export default Product
