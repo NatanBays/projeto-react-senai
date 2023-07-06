@@ -22,7 +22,7 @@ function Home() {
             />
             <br/>
             <InformationText
-                pContent="Mais uma vez, seja bem-vindo(a) à Empresa de Mentira! 
+                pContent="Mais uma vez, seja bem-vindo(a) à Top 10 Movie! 
                 Estamos ansiosos para embarcar nesta jornada empolgante com você. 
                 Prepare-se para dar vida às nossas histórias e tornar a ficção ainda mais fascinante!"
                

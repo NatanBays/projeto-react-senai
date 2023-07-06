@@ -7,7 +7,7 @@ function Info() {
             <h1>Informações</h1>
             <InformationText
                 h2Content="Sobre Nós"
-                pContent=" Na Empresa de mentira, Estamos entusiasmados em apresentar nosso novo
+                pContent=" Na Top 10 Movie, Estamos entusiasmados em apresentar nosso novo
                     serviço de anúncio dos filmes mais recentes lançados. Estamos aqui
                     para manter você atualizado com os filmes mais populares e emocionantes
                     que chegam às telas de cinema."
