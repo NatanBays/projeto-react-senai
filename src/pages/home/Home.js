@@ -5,7 +5,7 @@ function Home() {
 
     return (
         <div>
-            <h1>Bem-vindo(a) à Empresa de Mentira!</h1>
+            <h1>Bem-vindo(a) à Top 10 Movie!</h1>
             <InformationText
                 h2Content="Sobre o Site"
                 pContent="Estamos empolgados em apresentar a você uma experiência
