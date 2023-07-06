@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import './product.css'
+import Moment from "react-moment"
 function Product() {
 
     const [data, setData] = useState()
@@ -29,7 +30,13 @@ function Product() {
             <div className="container">
                 {data && data.map((x) =>
                     <article className="film-container">
-                        <span>{x.title}</span>
+                        <h3>{x.title}</h3>
+                        <strong>Data de Lançamento: </strong>
+                        <span>
+                            <Moment format = "DD-MM-YYYY">
+                                {x.release_date}
+                            </Moment>
+                        </span>
                         <img className="film-poster"
                             src={`https://image.tmdb.org/t/p/original/${x.poster_path}`}
                         />
