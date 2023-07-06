@@ -37,9 +37,13 @@ function Product() {
                                 {x.release_date}
                             </Moment>
                         </span>
+                        
                         <img className="film-poster"
                             src={`https://image.tmdb.org/t/p/original/${x.poster_path}`}
                         />
+                        <strong>
+                            Nota: {x.vote_average}
+                        </strong>
                     </article>
                 )}
             </div>
