@@ -12,6 +12,7 @@ function Info() {
                     para manter você atualizado com os filmes mais populares e emocionantes
                     que chegam às telas de cinema."
             />
+            <br/>
             <InformationText
                 h2Content="O que oferecemos"
                 pContent="Aqui, você encontrará detalhes completos sobre os filmes,
@@ -20,6 +21,7 @@ function Info() {
                     você tenha todas as informações necessárias para fazer escolhas informadas
                     ao planejar sua próxima ida ao cinema"
             />
+            <br/>
             <InformationText
                 h2Content="Explore nossa página web"
                 pContent="Nossa página web é o seu destino confiável para descobrir os filmes mais

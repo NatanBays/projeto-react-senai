@@ -9,7 +9,7 @@ function Product() {
         axios.get("https://api.themoviedb.org/3/movie/now_playing", {
             params: {
                 api_key: "b872d30e7ada92638f11d4091d584a72",
-                lenguage: "pt-BR",
+                language: "pt-BR",
                 page: 1,
             },
         }).then(response => [
